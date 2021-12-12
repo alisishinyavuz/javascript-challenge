@@ -25,31 +25,49 @@
       <h1>UFO Sightings</h1>
       <p>The Truth is Out There</p>
     </div>
-    <div class="container">
-      <div class="row margin-top-50">
-        <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </form>
-              </div>
-            </div>
-          </aside>
-        </div>
+    
+       <!-- -- Search list -- -->
+    <div class="features">
+     <div class="row">          
+			<div class="col-md-2">
+			  <aside class="filters">
+				<div class="panel panel-default">
+				  <div class="panel-heading">Search</div>
+				  <div class="panel-body">
+					<form>
+            <!-- <form id = "myForm" action = "#" style = "font-size: 20px;" ></form> -->
+					  <div class="form-group">
+						<ul class="list-group">
+						  <li class="filter list-group-item">
+							<label for="date">Date</label>
+							<input class="form-control" id="searchDate" type="text"></input>
+							
+							<label for="city">City</label>
+							<input class="form-control" id="searchCity" type="text"></input>
+							
+							<label for="state">State</label>
+							<input class="form-control" id="searchState" type="text"></input>
+							
+							<label for="country">Country</label>
+							<input class="form-control" id="searchCountry" type="text"></input>
+							
+							<label for="shape">Shape</label>
+							<input class="form-control" id="searchShape" type="text"></input>
+						  </li>
+						</ul>
+					  </div>
+					  <button id="searchButton" type="button" class="btn btn-default">Search</button> 
+					</form>
+          <button id="resetButton" type="button" class="btn btn-default" >Reset Data</button>
+				  </div>
+				</div>
+			  </aside>
+			</div>
+
+    <!-- -- Table -- -->
         <div class="col-md-10">
           <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
+            <table id="ufo-table" class="table table-striped table-hover">
               <thead>
                 <tr>
                   <th class="table-head">Date</th>
